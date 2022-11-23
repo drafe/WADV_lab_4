@@ -5,14 +5,25 @@
     <meta charset="UTF-8" />
 
     <script src="src/index.js" type="module"></script>
+    <style type="text/css">
+        .var{
+            color: #000066;
+            font-weight: bold;
+            width: 1em;
+            /*height: 1em;*/
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="container" id="mathContainer">
         <div>
-            <button id = 'newExprButton'>
-                Show new expression!
+            <input type="text" id="Expr">
+            by
+            <input type="text" id="Var" maxlength="1" class="var">
+            <p></p>
+            <button id="ExprButton">
+                Solve!
             </button>
         </div>
     </div>
